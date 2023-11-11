@@ -15,5 +15,7 @@ const  saveToCart = (cart) => {
 const addToLS = (id) => {
     const cart = getStoredCart();
     cart.push(id);
-    saveToCart(cart)
+    saveToCart(cart);
 }
+
+export {addToLS,getStoredCart}
